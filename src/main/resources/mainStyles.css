@@ -1,0 +1,47 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: lightcyan;
+}
+
+a {
+    color: white;
+}
+
+nav {
+    margin-top: 1%;
+    width: 60%;
+    margin-left: 20%;
+    box-shadow:  0 -10px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    float: bottom;
+    width:60%;
+    height: 90%;
+    padding:0 20px;
+    background-color: white;
+    box-shadow:  0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 10px rgba(0, 0, 0, 0.19);
+}
+
+.logo {
+    margin-top: 8px;
+    margin-left: -7px;
+}
+
+.footer {
+    height: 6%;
+    margin-top: -50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #343A40;
+}
+
+.footerText {
+    color: #9A9DA0;
+    text-align: center;
+    padding-top: 1%;
+}

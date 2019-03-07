@@ -80,7 +80,7 @@ ul.dashed > li:before {
     color: white;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    width: 95%;
     border: none;
     text-align: left;
     outline: none;
@@ -93,6 +93,7 @@ ul.dashed > li:before {
 
 .content {
     padding: 0 18px;
+    width: 95%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;

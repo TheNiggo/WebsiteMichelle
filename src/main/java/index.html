@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suchtprävention - Home</title>
     <link rel="icon" type="image/png" href="Logo.jpeg">
-    <script>alert("Willkommen! Hier findest du alle nützlichen Informationen. :)");</script>
+    <script>
+        let visited = localStorage.getItem('visited');
+        if (!visited) {
+            alert("Willkommen! Hier findest Du nützliche Informationen. :)");
+            localStorage.setItem('visited', true);
+        }
+    </script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -95,10 +101,11 @@
         <div class="p-2 bd-highlight">
             <h1>Home</h1>
             <p>
-                Zwischen Genuss und Abhängigkeit besteht nur ein minimaler Unterschied. Der Genuss wrid schnell zur
+                Zwischen Genuss und Abhängigkeit besteht nur ein minimaler Unterschied. Der Genuss wird schnell zur
                 Gewohnheit, die Gewohnheit lässt uns in die Sucht verfallen. Was einst harmlos begann, kann in einem
                 Teufelskreis enden.<br><br><b>Doch wann bin ich davon betroffen?!</b><br>
-                Diese Webseite befasst sich hauptsächlich mit Alkohol, Nikotin und Gaming, wobei der Schwerpunkt auf die Prävention zielt.
+                Diese Webseite befasst sich hauptsächlich mit Alkohol, Nikotin und Gaming, wobei der Schwerpunkt auf die
+                Prävention zielt.
             </p>
             <br>
             <h2>Was bedeutet Sucht?</h2>
@@ -128,8 +135,9 @@
                     Stoffungebundene Süchte
                     <ul>
                         <li>
-                            &nbsp;Auch eine übersteigerte Ausübung bestimmter Verhaltensweisen, wie zum Beispiel Internetnutzung,
-                             Einkaufen, Glücksspiele, Gamen oder Sexualverhalten, kann zu einer Sucht führen. <br>
+                            &nbsp;Auch eine übersteigerte Ausübung bestimmter Verhaltensweisen, wie zum Beispiel
+                            Internetnutzung,
+                            Einkaufen, Glücksspiele, Gamen oder Sexualverhalten, kann zu einer Sucht führen. <br>
                             Dies wird auch <i>Verhaltenssüchte</i> genannt.
                         </li>
                     </ul>
@@ -163,10 +171,10 @@
     let i;
 
     for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
+        coll[i].addEventListener("click", function () {
             this.classList.toggle("active");
             let content = this.nextElementSibling;
-            if (content.style.maxHeight){
+            if (content.style.maxHeight) {
                 content.style.maxHeight = null;
             } else {
                 content.style.maxHeight = content.scrollHeight + "px";

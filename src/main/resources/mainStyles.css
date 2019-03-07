@@ -24,6 +24,28 @@ footer {
     background-color: #343A40;
 }
 
+ul {
+    margin: 0;
+}
+
+ul.dashed {
+    list-style-type: none;
+}
+
+ul.dashed > li {
+    text-indent: -5px;
+    margin-left: -10px;
+}
+
+ul.dashed > li:before {
+    content: "-";
+    text-indent: -5px;
+}
+
+.firstEntry {
+    margin-top: -15px;
+}
+
 .container {
     margin-top: 1%;
     float: bottom;
@@ -36,7 +58,7 @@ footer {
 .logo {
     float: left;
     margin-top: 8px;
-    margin-left: -7px;
+    margin-left: -15px;
 }
 
 .context {
@@ -49,7 +71,32 @@ footer {
     color: #9A9DA0;
     text-align: center;
     padding-top: 1%;
-    font-size: 1.3vw;
+    padding-bottom: 0.3%;
+    font-size: 100%;
+}
+
+.collapsible {
+    background-color: #343A40;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #484F55;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
 }
 
 @media only screen and (max-width: 620px) {

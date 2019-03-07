@@ -94,18 +94,60 @@
         </div>
         <div class="p-2 bd-highlight">
             <h1>Home</h1>
-            <p>lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
-                ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
-                ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
-                ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
-                ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
-                ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
-                ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
-                ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
-                ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
-                ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
-                ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem
-                ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</p>
+            <p>
+                Zwischen Genuss und Abhängigkeit besteht nur ein minimaler Unterschied. Der Genuss wrid schnell zur
+                Gewohnheit, die Gewohnheit lässt uns in die Sucht verfallen. Was einst harmlos begann, kann in einem
+                Teufelskreis enden.<br><br><b>Doch wann bin ich davon betroffen?!</b><br>
+                Diese Webseite befasst sich hauptsächlich mit Alkohol, Nikotin und Gaming, wobei der Schwerpunkt auf die Prävention zielt.
+            </p>
+            <br>
+            <h2>Was bedeutet Sucht?</h2>
+            <p>
+                Nach Duden:
+            <ol>
+                <li class="firstEntry">
+                    "Eine krankhafte Abhängigkeit von einem bestimmten Genuss- oder Rauschmittel."
+                </li>
+                <li>
+                    "Übersteigertes Verlangen nach etwas oder einem bestimmten Tun."
+                </li>
+            </ol>
+            <p>
+                Die Sucht wird in zwei Hauptgruppen unterschieden:
+            <ul class="dashed">
+                <li class="firstEntry">
+                    Stoffgebundene Süchte
+                    <ul>
+                        <li>
+                            &nbsp;Beim Konsum von jeglichen psychoaktiven Substanzen, kann eine Sucht entstehen.
+                            Dazu gehören Alkohol, Tabak, Medikamente, Cannabis, Kokain und weitere Partydrogen.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Stoffungebundene Süchte
+                    <ul>
+                        <li>
+                            &nbsp;Auch eine übersteigerte Ausübung bestimmter Verhaltensweisen, wie zum Beispiel Internetnutzung,
+                             Einkaufen, Glücksspiele, Gamen oder Sexualverhalten, kann zu einer Sucht führen. <br>
+                            Dies wird auch <i>Verhaltenssüchte</i> genannt.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <br>
+            <button class="collapsible">Abhängigkeit</button>
+            <div class="content">
+                <p>Lorem ipsum...</p>
+            </div>
+            <button class="collapsible">Ursachen der Sucht</button>
+            <div class="content">
+                <p>Lorem ipsum...</p>
+            </div>
+            <button class="collapsible">Was geschieht im Körper?</button>
+            <div class="content">
+                <p>Lorem ipsum...</p>
+            </div>
         </div>
     </div>
     <footer class="page-footer font-small">
@@ -114,6 +156,24 @@
                 class="footerText" href="sources.html">Quellen</a></p>
     </footer>
 </div>
+
+<!--JS for collapsible-->
+<script>
+    let coll = document.getElementsByClassName("collapsible");
+    let i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            let content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

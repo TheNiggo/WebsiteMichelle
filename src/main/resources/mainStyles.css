@@ -111,10 +111,15 @@ ul.dashed > li:before {
     background-color: #f1f1f1;
 }
 
-#addictionIMG {
-    width: 350px;
+.imgCaption {
     font-size: 80%;
     text-align: center;
+}
+
+.links {
+    background-color: #343A40;
+    margin-bottom: 0.3%;
+    padding: 0.5%;
 }
 
 @media only screen and (max-width: 620px) {
@@ -128,7 +133,7 @@ ul.dashed > li:before {
         width: 106.5%;
     }
 
-    #addictionIMG {
+    .imgCaption {
         width: 100%;
     }
 

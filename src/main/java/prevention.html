@@ -92,10 +92,48 @@
             <img class="logo" src="Logo.jpeg" alt="Website logo" width="165">
         </div>
         <div class="p-2 bd-highlight">
-            <h1>Prävention</h1>
-            <p>
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-            </p>
+            <div>
+                <h1>Prävention</h1>
+                <p>
+                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem
+                    ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                </p>
+            </div>
+            <button style="margin-top: 2%" class="collapsible">Alkohol</button>
+            <div class="content">
+                <p>
+                    Alkoholprävention hat das Ziel, den frühen Einstieg in den Konsum bei Jugendlichen zu verhindern und
+                    somit Risiken vorzubeugen oder zu reduzieren. Das Konsumverhalten der Jugendlichen kann durch
+                    Stärkung psychosozialer Kompetenzen beeinflusst werden.
+                    Dies trägt dazu bei, alkoholbezogene Problemverhalten zu verhindern oder zu verringern und einen
+                    verantwortungsvollen Umgang zu unterstützen. Dafür eignen sich Lebenskompetenzprogramme an Schulen
+                    oder in der Ausbildung.
+                    Wer sich frühzeitig informiert und langfristig entscheidet trägt dazu bei, das Suchtrisiko zu
+                    minimieren.<br>
+                    Beispiele für Präventionsmassnahmen wären:<br>
+                <ul>
+                    <li class="firstEntry">
+                        Das Bundesamt für Gesundheit führt jährlich Werbekampagnen durch und veröffentlich dies in den
+                        Sozialen Medien oder TV
+                    </li>
+                    <li>Alkohol nicht als Durstlöscher missbrauchen</li>
+                    <li>Sich nicht auf Trinkspiele einlassen</li>
+                    <li>Ich kann "Nein" sagen und sich nicht verleiten lassen (braucht hohes Selbstbewusstsein)</li>
+                    <li>Kein Alkoholkonsum bei Frust oder Traurigkeit</li>
+                </ul>
+            </div>
+            <button class="collapsible">Nikotin</button>
+            <div class="content">
+                <p>
+
+                </p>
+            </div>
+            <button class="collapsible">Gaming</button>
+            <div class="content">
+                <p>
+
+                </p>
+            </div>
         </div>
     </div>
     <footer class="page-footer font-small">
@@ -104,6 +142,24 @@
                 class="footerText" href="sources.html">Quellen</a></p>
     </footer>
 </div>
+
+<!--JS for collapsible-->
+<script>
+    let coll = document.getElementsByClassName("collapsible");
+    let i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            let content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

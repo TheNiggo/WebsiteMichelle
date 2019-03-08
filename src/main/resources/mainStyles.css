@@ -22,6 +22,7 @@ footer {
     width: 104%;
     margin-left: -2%;
     background-color: #343A40;
+    box-shadow: 0 10px 8px 10px rgba(0, 0, 0, 0.2);
 }
 
 ul {
@@ -48,6 +49,7 @@ ul.dashed > li:before {
 
 .container {
     margin-top: 1%;
+    margin-bottom: 1%;
     float: bottom;
     width: 70%;
     height: auto;

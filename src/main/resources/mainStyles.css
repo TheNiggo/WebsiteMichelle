@@ -57,6 +57,15 @@ ul.dashed > li:before {
     box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 10px rgba(0, 0, 0, 0.19);
 }
 
+.leftContainer {
+    float: left;
+    width: 60%;
+}
+
+.rightContainer {
+    float: right;
+}
+
 .logo {
     float: left;
     margin-top: 8px;
@@ -102,11 +111,29 @@ ul.dashed > li:before {
     background-color: #f1f1f1;
 }
 
+#addictionIMG {
+    width: 350px;
+    font-size: 80%;
+    text-align: center;
+}
+
 @media only screen and (max-width: 620px) {
     /* For mobile phones: */
-    .container, nav, footer {
+    .container {
         width: 105%;
         margin-left: -2%;
+    }
+
+    nav, footer {
+        width: 106.5%;
+    }
+
+    #addictionIMG {
+        width: 100%;
+    }
+
+    .leftContainer {
+        width: 100%;
     }
 
     .footerText {

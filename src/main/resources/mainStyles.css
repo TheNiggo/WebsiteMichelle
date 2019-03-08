@@ -116,6 +116,10 @@ ul.dashed > li:before {
     text-align: center;
 }
 
+.imgLink {
+    color: cornflowerblue;
+}
+
 .links {
     background-color: #343A40;
     margin-bottom: 0.3%;

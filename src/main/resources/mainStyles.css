@@ -58,6 +58,7 @@ td#fourthTable {
 
 a {
     color: white;
+    word-wrap: break-word;
 }
 
 nav {
@@ -200,5 +201,9 @@ ul.dashed > li:before {
 
     .logo {
         width: 0;
+    }
+
+    .wrap {
+        width: 40%;
     }
 }

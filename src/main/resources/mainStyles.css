@@ -7,6 +7,55 @@ body {
     background-color: lightcyan;
 }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    text-align: center;
+    background-color: #A09FA1;
+}
+
+th.left {
+    text-align: left;
+    font-weight: bold;
+    background-color: #f1f1f1;
+}
+
+td {
+    text-align: left;
+    background-color: white;
+}
+
+td#secondTableLink {
+    padding-right: 11px;
+}
+
+td#secondTable {
+    padding-right: 253px;
+}
+
+td#thirdTableLink {
+    padding-right: 127px;
+}
+
+td#thirdTable {
+    padding-right: 307px;
+}
+
+td#fourthTableLink {
+    padding-right: 142px;
+}
+
+td#fourthTable {
+    padding-right: 291px;
+}
+
 a {
     color: white;
 }
